@@ -1,3 +1,44 @@
 ---
 layout: default
+title: Get in Touch
+header: Our Details
+intro: Do you need a website, have a question or comment? Please feel free fill in our handy contact form. We aim to reply within 24 hours.
+description:
 ---
+<div class="container wrapper">
+  <div class="inner_content">
+    <div class="pad10"></div>
+    <div class="row">
+      <div class="span4">
+        <h3>Not an NPO but looking for a commercial website?</h3>
+        Contact us with your requirements and we can provide you with a quote.
+      </div>
+      <div class="pad10"></div>
+      <div class="span8 ">
+        <div class="contact_form">
+          <div id="note"></div>
+          <div id="fields">
+            <form id="ajax-contact-form" action="http://getsimpleform.com/messages?form_api_token=c1c2494c39fe2e6b6f29f634c27ccd95" method="post">
+              <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+              <input type='hidden' name='redirect_to' value='http://www.affinity-tech.com/thankyou.html' />
+                <!-- all your input fields here.... -->
+              <p class="form_info">name <span class="required">*</span></p>
+              <input class="span5" type="text" name="name" value="" />
+              <p class="form_info">email <span class="required">*</span></p>
+              <input class="span5" type="text" name="email" value=""  />
+              <p class="form_info">subject</p>
+              <input class="span5" type="text" name="subject" value="" /><br>
+              <p class="form_info">message</p>
+              <textarea name="message" id="message" class="span8" ></textarea>
+              <div class="clear"></div>
+
+              <input type="submit" class="btn  btn-primary btn-form marg-right5" value="submit" />
+              <input type="reset"  class="btn  btn-primary btn-form" value="reset" />
+              <div class="clear pad45 hidden-desktop"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

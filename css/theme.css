@@ -35,7 +35,7 @@ body {
 }
 
 /**** PAGE CONTAINERS ****/
-.header {
+header {
 	padding:0 0;
 	background:#323A45;
 	margin:0 auto;
@@ -265,14 +265,21 @@ h1.intro {  line-height:40px; font-weight:300;}
 /*-----------------------------------------------------------------------------------*/
 /**** LOGO****/
 .logo a{
- 	float:left;
-	margin:26px 0px 0 0;
+
 	webkit-transition:all 0.3s ease-in;
     -moz-transition:all 0.3s ease-in;
     -o-transition:all 0.3s ease-in;
     transition:all 0.3s ease-in;
 }
 .logo a:hover{ opacity: .80; }
+
+.logo span{
+	margin: 10px 0px 0 0;
+	font: 35pt 'Lato', sans-serif;
+	font-weight: 300;
+	float:left;
+	color: #E9E6E1;
+}
 
 #main_menu {float:right; margin:22px 0 0 0;}
 .nav{ padding:0; margin:0; }
@@ -1119,7 +1126,7 @@ h3.follow {
 }
 
 #footer { background-color:#45B39E; padding: 40px 0 30px; text-align:center; }
-#footer2 {
+footer {
 	position:relative;
 	text-align:center;
 	padding:39px 0 36px;
@@ -1303,7 +1310,7 @@ ul#itemContainer { list-style: none; padding:0 0; margin:0 0; width:100%; }
     float:left;
     margin:0 3px 0 0;
 	height:auto;
-	min-height:315px;
+	min-height:215px;
 }
 .slider-item .slider-image,
 .slider-item .slider-image a,
@@ -1784,8 +1791,8 @@ ul.nav-tabs { margin: 0 !important; }
 @media (max-width: 979px) {
 nav{ background:#323A45;}
 .btn-navbar{display:block;}
-.header{ float:none !important; text-align:center; margin:0px auto 0px auto; padding-bottom:10px!important;}
-.header .container{min-width:100% !important;margin:0 !important;padding:0 !important;}
+header{ float:none !important; text-align:center; margin:0px auto 0px auto; padding-bottom:10px!important;}
+header .container{min-width:100% !important;margin:0 !important;padding:0 !important;}
 #main_menu{width:100%; display:block; margin:22px 0px 0 0;}
 .logo  { margin-left: 35px;}
 .btn-navbar { margin-right: 25px;}

@@ -8,7 +8,7 @@ navigation:
  - title: Home
    url: /index.html
  - title: Projects
-   url: /projects.html
+   url: /projects/projects.html
  - title: About
    url: /about.html
  - title: Contact
