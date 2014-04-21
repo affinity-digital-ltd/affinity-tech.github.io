@@ -7,19 +7,39 @@ layout: default
     <div class="row">
       <!-- portfolio_block -->
         <div class="projects">
-            {% for project in site.projects %}
-              <div class="span4 element category01" data-category="category01">
-                <div class="hover_img">
-                  <a href="img/portfolio/1.jpg" data-rel="prettyPhoto[portfolio1]">
-                    <img src="img/portfolio/1.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="item_description">
-                   <a href="single_portfolio.html"><span>Item Link</span></a><br/>
-                    {{ project.title }}
-                </div>
+            <div class="span4 element category01" data-category="category01">
+              <div class="hover_img">
+                <a href="img/portfolio/1.jpg" data-rel="prettyPhoto[portfolio1]">
+                  <img src="img/portfolio/1.jpg" alt="" />
+                </a>
               </div>
-            {% endfor %}
+              <div class="item_description">
+                 <a href="single_portfolio.html"><span>eBook Generator</span></a><br/>
+                 An application to generate your own eBook using Markdown to enter content.
+              </div>
+            </div>
+            <div class="span4 element category02" data-category="category02">
+              <div class="hover_img">
+                <a href="img/portfolio/1.jpg" data-rel="prettyPhoto[portfolio1]">
+                  <img src="img/portfolio/1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="item_description">
+                 <a href="single_portfolio.html"><span>eBook Generator Gem</span></a><br/>
+                 A rails gem that is used to power the eBook Generator.
+              </div>
+            </div>
+            <div class="span4 element category03" data-category="category03">
+              <div class="hover_img">
+                <a href="img/portfolio/1.jpg" data-rel="prettyPhoto[portfolio1]">
+                  <img src="img/portfolio/1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="item_description">
+                 <a href="single_portfolio.html"><span>Pali Canon</span></a><br/>
+                 A collection of eBook Pali Suttas generated using the eBook Generator.
+              </div>
+            </div>
           <div class="clear"></div>
         </div>
         <!-- //portfolio-->
