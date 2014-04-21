@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="container wrapper">
+  <div class="inner_content">
+    <div class="row">
+      <!-- portfolio_block -->
+        <div class="projects">
+            {% for project in site.projects %}
+              <div class="span4 element category01" data-category="category01">
+                <div class="hover_img">
+                  <a href="img/portfolio/1.jpg" data-rel="prettyPhoto[portfolio1]">
+                    <img src="img/portfolio/1.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item_description">
+                   <a href="single_portfolio.html"><span>Item Link</span></a><br/>
+                    {{ project.title }}
+                </div>
+              </div>
+            {% endfor %}
+          <div class="clear"></div>
+        </div>
+        <!-- //portfolio-->
+      </div>
+    </div>
+  </div>
+</div>

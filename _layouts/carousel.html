@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+      {% include header.html %}
+      <!--page-->
+      {{ content }}
+      <div class="container wrapper">
+        <div class="inner_content">
+          <div class="pad45"></div>
+          {% include showreel.html %}
+        </div>
+        <!--//page-->
+        <div class="pad25 hidden-desktop"></div>
+      </div>
+      {% include footer.html %}
+    </body>
+</html>

@@ -5,21 +5,21 @@
 			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 			<i class="fa fa-bars"></i></button>
 					<div class="logo">
-						 <a href="/"><img src="img/logo.png" alt="affinity-tech" class="animated bounceInDown" /></a>
+						 <a href="/"><img src="/img/logo.png" alt="affinity-tech" class="animated bounceInDown" /></a>
 					</div>
 					<!--menu-->
-					   <nav id="main_menu">
+		   	<nav id="main_menu">
 					<div class="nav-collapse collapse">
 						<ul class="nav nav-pills">
-							<li><a href="/">Home</a></li>
-							<li class="dropdown"><a href="javascript:{}">Work</a>
-								<ul class="dropdown-menu">
-									<li><a href="portfolio_2columns.html">eBook Generator</a></li>
-									<li><a href="portfolio_4columns.html">Pali Canon</a></li>
-									<li><a href="portfolio_3columns.html">eBook Generator Gem</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
+					    {% for link in site.navigation %}
+        				{% assign active = nil %}
+					        {% if page.url contains link.url %}
+					            {% assign active = 'active' %}
+					        {% endif %}
+					        <li class="element {% if forloop.first %}first{% endif %} {{ active }} {% if forloop.last %}last{% endif %}">
+					            <a href="{{ link.url }}">{{ link.title }}</a>
+					        </li>
+					    {% endfor %}
 						</ul>
 					</div>
 				</nav>
