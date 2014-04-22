@@ -4,12 +4,3 @@ highlighter: pygments
 url: "http://www.affinity-tech.com"
 description: "yo yo yo"
 exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor]
-navigation:
- - title: Home
-   url: /index.html
- - title: Projects
-   url: /projects/projects.html
- - title: About
-   url: /about.html
- - title: Contact
-   url: /contact.html

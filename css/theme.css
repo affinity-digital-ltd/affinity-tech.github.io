@@ -37,12 +37,14 @@ body {
 /**** PAGE CONTAINERS ****/
 header {
 	padding:0 0;
-	background:#323A45;
+	background: rgba(50,58,69,0.7);
 	margin:0 auto;
-	min-height: 86px;
+	min-height: 56px;
 	width: 100%;
 	z-index: 1000;
+	position: fixed;
 }
+.black-header { padding: 56px 0 0 0; background: black;}
 .inner_content { padding:20px 0 0 0; }
 .wrapper {  margin:0px auto; padding:0 0 60px;}
 #banner { background:#e9e6e1; width: 100%; }
@@ -274,8 +276,8 @@ h1.intro {  line-height:40px; font-weight:300;}
 .logo a:hover{ opacity: .80; }
 
 .logo span{
-	margin: 10px 0px 0 0;
-	font: 35pt 'Lato', sans-serif;
+	margin: 5px 0px 0 0;
+	font: 25pt 'Lato', sans-serif;
 	font-weight: 300;
 	float:left;
 	color: #E9E6E1;
@@ -298,7 +300,7 @@ h1.intro {  line-height:40px; font-weight:300;}
 	letter-spacing: 2px;
 	font-size: 13px;
 	display: block;
-	padding:24px 22px 22px 25px;
+	padding:0px 22px 15px 25px;
 	text-align: center!important;
 	text-transform: uppercase;
 }

@@ -10,16 +10,19 @@
 					<!--menu-->
 		   	<nav id="main_menu">
 					<div class="nav-collapse collapse">
-						<ul class="nav nav-pills">
-					    {% for link in site.navigation %}
-        				{% assign active = nil %}
-					        {% if page.url contains link.url %}
-					            {% assign active = 'active' %}
-					        {% endif %}
-					        <li class="element {% if forloop.first %}first{% endif %} {{ active }} {% if forloop.last %}last{% endif %}">
-					            <a href="{{ link.url }}">{{ link.title }}</a>
-					        </li>
-					    {% endfor %}
+						<ul class="nav nav-pills nav-justified">
+			        <li>
+			           <a href="index.html">Home</a>
+			        </li>
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="index.html#projects">Projects</a>
+							</li>
+							<li>
+								<a href="index.html#contact">Contact</a>
+							</li>
 						</ul>
 					</div>
 				</nav>
