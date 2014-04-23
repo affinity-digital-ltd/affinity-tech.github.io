@@ -7,7 +7,6 @@
 					affinity tech &copy; 2014
 				 	- All Rights Reserved :
 					Developed by <a href="http://www.affinity-tech.com">affinity tech</a>,
-					Template by <a href="http://spiralpixel.com">Spiral Pixel</a>
 				</div>
 			</div>
 		</div>
@@ -67,23 +66,4 @@ $(function() {
 });
 	//]]>
 </script>
-<script>
-//<![CDATA[
- setTimeout(function(){
- $('.progress .bar').each(function() {
-            var me = $(this);
-            var perc = me.attr("data-percentage");
-			 var current_perc = 0;
-			var progress = setInterval(function() {
-                if (current_perc>=perc) {
-                    clearInterval(progress);
-                } else {
-                    current_perc +=1;
-                    me.css('width', (current_perc)+'%');
-                }
-				me.text((current_perc)+'%');
-			}, 20);
-		});
-	},300);
-	 //]]>
-</script>
+<script src="js/jquery-ui.min.js"></script>
