@@ -2,6 +2,6 @@ require 'rack/rewrite'
 
 
 use Rack::Rewrite do
-  r301 'http://affinity-tech.herokuapp.com', 'http://www.affinity-tech.com'
-  r301 %r{http://affinity-tech.herokuapp.com/(\S+)}, 'http://www.affinity-tech.com/$1'
+  r301 'affinity-tech.herokuapp.com', 'www.affinity-tech.com'
+  r301 %r{affinity-tech.herokuapp.com/(\S+)}, 'www.affinity-tech.com/$1'
 end
