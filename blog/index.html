@@ -13,57 +13,35 @@ layout: default
   </div>
 </div>
 
-<div class="container wrapper">
+<div class="container wrapper" name="about">
   <div class="inner_content">
     <div class="pad30"></div>
     <div class="row">
       <!--post-->
+      {% for post in site.posts %}
       <div class="span9 pad15">
         <div class="row">
           <!--date-->
           <div class="span1">
-            <div class="btn btn-medium btn-rounded btn-blog1"> 29 MAY
-              <i class="fa fa-comments fa-2x"></i> <a class="com_no" href="#">23</a>
-            </div>
+            <div class="btn btn-medium btn-rounded btn-blog1"> {{ post.date | date: "%b %-d, %Y" }} </div>
           </div>
           <!--post entry-->
-          <ul class="posts">
-            {% for post in site.posts %}
-            <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> <a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
           <div class="span8">
-            <div class="hover_img">
-              <a href="img/large/4.jpg" data-rel="prettyPhoto">
-                <img src="img/large/4.jpg" alt="">
-              </a>
-            </div>
-            <h1 class="post_link"><a href="blog_post.html">Donec iaculis metus vitae ligula </a></h1>
-            <div class="post">
-              <div class="post-header">
-                <h1>{{ page.title }}</h1>
-                <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-              </div>
-              <div class="post-content">
-                {{ content }}
-              </div>
-            </div>
+            <h1 class="post_link"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h1>
+
             <div class="post-meta muted">
               <ul>
-                <li>Posted by <a href="#">admin</a> </li>
-                <li>in <a href="#">web</a>, <a href="#">graphics</a> </li>
-                <li>tags <a href="#">prints</a>, <a href="#">design</a> </li>
+                <li>Posted by {{ post.author }} </li>
+                <li>in {{ post.categories }} </li>
+                <li>tags {{ post.tags }} </li>
               </ul>
             </div>
-            <p>Enim ultrices, elementum phasellus. Mauris sed nulla sed, egestas feugiat a dictum libero, nunc sapien tri tique facilisis venenatis risus,
-suspendisse ac nec et. Nulla sed mauris, congue duis proin nonummy adipiscing vitae  Mauris sed nulla sed, egestas feugiat a dictum libero, nunc sapien
-tristique facilisis venenatis risus. Enim ultrices, elementum phasellus. Mauris sed nulla sed, egestas feugiat a dictum libero, nunc sapien tristique.
-Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-<a href="#">[&#8230;]</a></p>
-            <div class="read_more"><a href="blog_post.html">READ MORE &rarr;</a></div>
+            {{ post.excerpt |  remove: '</p>' }}<a class="post-link" href="{{ post.url }}">[&#8230;]</a></p>
+            <div class="read_more"><a class="post-link" href="{{ post.url }}">READ MORE &rarr;</a></div>
             <div class="pad30"></div>
-          </div>
+
           <!--end post-->
+          {% endfor %}
           <div class="pad25 hidden-desktop"></div>
           <div class="pad25"></div>
           <ul class="pager">
@@ -71,55 +49,26 @@ Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Class aptent
             <li class="next"><a href="#">Newer &rarr;</a></li>
           </ul>
         </div>
-        <!--end pager-->
       </div>
     </div>
-</div>
+        <!--end pager-->
 
-<!--sidebar-->
-<div class="sidebar span3">
-  <h3>About Us</h3>
-  <h5>Morbi blandit ultricies ultrices ivam us nec lectus sed orci voluptua oportere molestie.
-Enim ultrices, elementum phasellus. Mauris sed nulla sed, egestas feugiat a dictum libero, nunc sapien tri tique facilisis venenatis risus,
-suspendisse ac nec et.
-  </h5>
-  <h3>Categories</h3>
-  <ul class="fa-ul">
-    <li><i class="fa-li fa fa-caret-right grey2"></i><a href="#">Design News</a></li>
-    <li><i class="fa-li fa fa-caret-right grey2"></i><a  href="#">Typography</a></li>
-    <li><i class="fa-li fa fa-caret-right grey2"></i><a  href="#">Premium Themes</a></li>
-    <li><i class="fa-li fa fa-caret-right grey2"></i><a  href="#">Photography</a></li>
-    <li><i class="fa-li fa fa-caret-right grey2"></i><a  href="#">Graphics</a></li>
-  </ul>
-  <div class="pad30"></div>
-  <!--search-->
-  <input class="span3" type="text" placeholder="search">
-  <div class="pad10"></div>
-  <h4>Popular Posts</h4>
-  <ul class="media-list">
-    <li class="media">
-      <img class="pull-left img-rounded" src="img/small/pop_post1.jpg" alt="" />
-      <div class="media-body">
-        <small class="muted">07/05/13</small><br>
-        <a href="#">Aliquam convallis erat a enim dictum gravida nulla</a>
-      </div>
-    </li>
-    <li class="media">
-      <img class="pull-left img-rounded" src="img/small/pop_post2.jpg" alt="" />
-      <div class="media-body">
-        <small class="muted">29/04/13</small><br>
-        <a href="#">Enim ultrices, elementum phasellus. Mauris sed nulla sed, egestas feugia</a>
-      </div>
-    </li>
-    <li class="media">
-      <img class="pull-left img-rounded" src="img/small/pop_post3.jpg" alt="" />
-      <div class="media-body">
-        <small class="muted">23/04/15</small><br>
-        <a href="#">Mauris sed nulla sed, egestas feugiat a dictum libero</a>
-      </div>
-    </li>
-  </ul>
-</div>
 
+    <!--sidebar-->
+    <div class="sidebar span3">
+
+      <h3>Categories</h3>
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">affinity tech</a></li>
+        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">eBook Generator</a></li>
+        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">eBook Gem</a></li>
+        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">Pali Canon</a></li>
+      </ul>
+  		<div class="pad10"></div>
+
+      </div>
+  </div>
+</div>
+</div>
 </div>
 <!--end-->
