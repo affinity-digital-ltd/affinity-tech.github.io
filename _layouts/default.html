@@ -10,11 +10,81 @@
       ga('create', 'UA-50407965-1', 'affinity-tech.com');
       ga('send', 'pageview');
     </script>
-    {% include header.html %}
-    <div class="black-header"></div>
-    <!--page-->
-    {{ content }}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-3 sidebar">
+          {% include header.html %}
+          {% include footer.html %}
+        </div>
+        <div class="col-xs-6 pad">
+          <!--page-->
+          {{ content }}
+        </div>
+        <div class="col-xs-3 pad">
+          <div class="well well-lg">
+             <i class="fa fa-heart colour big pad"></i>
+              <h2>Our Philosophy</h2>
+                <p><strong>We at affinity tech believe that the root of happiness is developed through sharing and kindness.</strong></p>
+                <p>Therefore, we offer our services for free to organisations whose aim is to support communities with similar aims and approaches.</p>
+          </div>
+          <div class="well well-lg">
+            <i class="fa fa-group colour big pad"></i>
+            <h2>Our Mission</h2>
+            <p>Our mission is to collaborate and cooperate with NPOs looking to provide a good cause.  We would like to aid you in any way we can in delivering your mission and vision.</p>
+            <h5>We offer the following services:</h5>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-check colour"></i> Web Apps</li>
+              <li><i class="fa-li fa fa-check colour"></i> Websites</li>
+              <li><i class="fa-li fa fa-check colour"></i> Web Design</li>
+              <li><i class="fa-li fa fa-check colour"></i> Support for Hosting</li>
+            </ul>
+          </div>
+          <div class="well well-lg">
+            <i class="fa fa-comments-o colour big pad"></i>
+            <h2>Our Process</h2>
+            <p>If you have a project which you believe affinity tech could help with, then please get in contact with us.</p>
+            <h5>Please provide us with the following information:</h5>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-check colour"></i> What product/service you wish to provide </li>
+              <li><i class="fa-li fa fa-check colour"></i> How others can benefit </li>
+              <li><i class="fa-li fa fa-check colour"></i> How you would like us to support you </li>
+              <li><i class="fa-li fa fa-check colour"></i> We aim to respond within 24 hours </li>
+            </ul>
+          </div>
+          <div class="well well-lg">
+            <h2 class="pad">Keep Up to Date</h2>
+            <p>
+              If you would like to follow updates about our new and existing projects or to discuss a project of your own. Then please feel free to sign up to our newsletter or contact us.
+            </p>
+            <!-- Begin MailChimp Signup Form -->
+
+              <form action="http://krisquigley.us7.list-manage2.com/subscribe/post?u=0ae688765cfcd447616e2ae23&amp;id=2097ed7c81" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-horizontal validate" target="_blank" novalidate>
+                <fieldset>
+                <div class="form-group">
+                  <label for="mce-EMAIL" class="control-label"></label>
+                  <div class="col-xs-12">
+                    <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Sign up for our newsletter">
+                  </div>
+                </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_0ae688765cfcd447616e2ae23_2097ed7c81" value=""></div>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="submit" class="btn btn-primary" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
+              </div>
+            </div>
+          </fieldset>
+            </form>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--//page-->
-    {% include footer.html %}
+
   </body>
 </html>

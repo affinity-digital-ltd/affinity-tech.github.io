@@ -1,6 +1,6 @@
 name: affinity tech
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 url: "http://www.affinity-tech.com"
 description: "yo yo yo"
 exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor]

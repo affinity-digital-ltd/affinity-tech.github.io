@@ -37,14 +37,12 @@ body {
 /**** PAGE CONTAINERS ****/
 header {
 	padding:0 0;
-	background: rgba(50,58,69,0.7);
 	margin:0 auto;
 	min-height: 56px;
 	width: 100%;
 	z-index: 1000;
-	position: fixed;
 }
-.black-header { padding: 56px 0 0 0; background: black;}
+
 .inner_content { padding:20px 0 0 0; }
 .wrapper {  margin:0px auto; padding:0 0 60px;}
 #banner { background:#e9e6e1; width: 100%; }

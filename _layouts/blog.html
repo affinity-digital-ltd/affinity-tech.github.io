@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-50407965-1', 'affinity-tech.com');
+      ga('send', 'pageview');
+    </script>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-3 sidebar">
+          {% include header.html %}
+          {% include footer.html %}
+        </div>
+        <div class="col-xs-6 pad">
+          <!--page-->
+          {{ content }}
+        </div>
+        <div class="col-xs-3 pad">
+          <div class="well well-lg">
+            <h3 class="pad">Categories</h3>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">affinity tech</a></li>
+              <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">eBook Generator</a></li>
+              <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">eBook Gem</a></li>
+              <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">Pali Canon</a></li>
+            </ul>
+          </div>
+          {% for post in site.related_posts %}
+            <div class="well well-lg">
+              <h6 class="pad"><a href="{{ post.url }}"></a>{{ post.title }}</a><br>
+                <i class="fa fa-clock-o muted"></i> {{ post.date }}
+              </h6>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!--//page-->
+
+  </body>
+</html>

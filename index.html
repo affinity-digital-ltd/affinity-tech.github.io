@@ -4,368 +4,151 @@ description: affinity tech provides its services for free to individuals and NPO
 keywords: ebook, affinity, tech, affinity tech, websites, webdesign, rails, ruby, community, free
 title: We feel that giving to the community is important.  Which is why we offer our services for free to not-for-profit organisations.
 ---
+<div class="well well-lg">
+    <a href="http://ebook-generator.affinity-tech.com"><img class="project-image" src="img/ebook.jpeg" alt="eBook Generator Image" ></a>
+  <h1><a href="http://ebook-generator.affinity-tech.com">eBook Generator</a></h1>
+  <p><b>What began as an in-house app to help us create eBooks has become a public facing tool to give back to the community what we have found a great timesaver.  Currently, this is only capable of exporting to .ePub format which can be used in pass like iBooks.</b></p>
+  <p>Current features include the ability to reorder sections of the book by drag and dropping them, editing and deleting sections and through using Markdown to write content.  Markdown is a very quick and easy way to style and control HTML.  We have plans to introduce many more features such as .mobi export which can be used with Amazon's Kindle line of readers and support for adding front cover images and more control over the style of your content.  Further down the road, we would even like to build integrated services to help have your book published or even printed.  If you would like to see a certain feature integrated into the site, then we would love to hear from you.  Ideas can be sent to us from our contact page form.</p>
 
-<div id="banner">
-  <div class="container intro_wrapper">
-    <div class="inner_content">
-      <!--welcome-->
-      <div class="welcome_index">
-          We feel that giving to the <span class="hue">community</span> is important.  Which is why we offer our services for <span>free</span> to <a href="#about"><span class="hue_block white normal">not-for-profit</span></a> organisations.
-      </div>
-      <!--//welcome-->
-    </div>
-  </div>
-</div>
-<!--//banner-->
+  <p>Our eBook Generator runs on the following technologies:</p>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
+    <li><i class="fa-li fa fa-check colour"></i> Bootstrap 3</li>
+    <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
+    <li><i class="fa-li fa fa-check colour"></i> Heroku</li>
+  </ul>
+  <p>This website is actually powered by our <a href="#ebook-gem">eBook Generator Gem</a>, which is freely available to integrate into your own projects.  Details on how this can be used and our future roadmap can be found <a href="#ebook-gem-roadmap">below.</a></p>
 
-<!-- About -->
-<div class="container wrapper" name="about">
-  <div class="inner_content">
-    <div class="pad30"></div>
-
-    <div class="row">
-    	<div class="span4">
-      	<div class="animated bounceInLeft"><i class="fa fa-heart colour big"></i></div>
-      	<h2>Our Philosophy</h2>
-      		<p>
-      			<span>We at affinity tech believe that the root of happiness is developed through sharing and kindness.</span>
-      		</p>
-      		<p>
-      		  Therefore, we offer our services for free to organisations whose aim is to support communities with similar aims and approaches.
-      		</p>
-    		<div class="pad12"></div>
-      </div>
-
-		  <div class="span4">
-		    <div class="animated bounceInDown"><i class="fa fa-group colour big"></i></div>
-		    <h2>Our Mission</h2>
-			  <p>
-			     Our mission is to collaborate and cooperate with NPOs looking to provide a good cause.  We would like to aid you in any way we can in delivering your mission and vision.
-			  </p>
-				<h5>We offer the following services:</h5>
-				<ul class="fa-ul">
-					<li><i class="fa-li fa fa-check colour"></i> Web Apps</li>
-					<li><i class="fa-li fa fa-check colour"></i> Websites</li>
-					<li><i class="fa-li fa fa-check colour"></i> Web Design</li>
-					<li><i class="fa-li fa fa-check colour"></i> Support for Hosting</li>
-				</ul>
-				<div class="pad25"></div>
-			</div>
-
-		  <div class="span4">
-		    <div class="animated bounceInRight"><i class="fa fa-comments-o colour big"></i></div>
-		    <h2>Our Process</h2>
-  			<p>
-  				If you have a project which you believe affinity tech could help with, then please get in contact with us.
-  			</p>
-				<h5>Please provide us with the following information:</h5>
-				<ul class="fa-ul">
-					<li><i class="fa-li fa fa-check colour"></i> What product/service you wish to provide </li>
-					<li><i class="fa-li fa fa-check colour"></i> How others can benefit </li>
-					<li><i class="fa-li fa fa-check colour"></i> How you would like us to support you </li>
-					<li><i class="fa-li fa fa-check colour"></i> We aim to respond within 24 hours </li>
-				</ul>
-
-				<div class="pad25"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span8">
-
-
-  			<div class="pad45 hidden-desktop"></div>
-      </div>
-  	</div>
-  </div>
 </div>
 
-<div name="projects" id="banner">
-  <div class="container intro_wrapper">
-    <div class="inner_content">
-      <h1>Our Work</h1>
-      <h1 class="title">What We Have Achieved</h1>
+<div class="well well-lg text-center">
+  <h2 class="pad">Get in Touch</h2>
+  <p>If you are looking for a commercial site or webapp, we would be more than happy to provide you with a free quote.</p>
+  <p>
+    <a href="#contact" class="btn btn-primary">Contact Us Today</a>
+  </p>
+</div>
 
-      <h1 class="intro">
-        We are currently working hard on developing the following products.  These projects are all free to use and distribute as long as the original authors are credited.
-      </h1>
-    </div>
-  </div>
+<div class="well well-lg">
+  <a href="https://github.com/krisquigley/ebook_generator"><img class="project-image" src="img/ebook-gem.jpeg" alt="eBook Generator Gem Image" ></a>
+  <h1><a href="https://github.com/krisquigley/ebook_generator">eBook Gem</a></h1>
+  <p><b>Our eBook Gem is currently powering our eBook Generator site, details of which can be found above.</b></p>
+  <h3>Installation</h3>
+  <p><strong>Add this line to your application's Gemfile:</strong></p>
+  {% highlight bash %}gem 'ebook_generator' {% endhighlight %}
+  <p><strong>And then execute:</strong></p>
+  {% highlight bash %}$ bundle {% endhighlight %}
+  <p><strong>Or install it yourself as:</strong></p>
+  {% highlight bash %}$ gem install ebook_generator {% endhighlight %}
+  <h3>Usage</h3>
+  {% highlight ruby %}
+# Generate the tables needed to process the ebooks
+rails generate ebook_generator
+
+# Migrate the database
+rake db:migrate
+
+# Pass the id for the ebook you want to generate
+EbookGenerator.generate_ebook(ebook.id)
+
+# This will then generate an ePub based on the values in the db
+# and output to the /tmp folder.{% endhighlight %}
+  <h3 name="ebook-gem-roadmap">Feature Roadmap</h3>
+  <p>
+    <h4>0.1.0</h4>
+    <ul class="roadmap">
+      <li>Kindle support</li>
+      <li>Tests</li>
+    </ul>
+    <h4>0.2.0</h4>
+    <ul class="roadmap">
+      <li>Style editing</li>
+    </ul>
+    <h4>0.3.0</h4>
+    <ul class="roadmap">
+      <li>PDF out</li>
+    </ul>
+    <h4>0.4.0</h4>
+    <ul class="roadmap">
+      <li>HTML out</li>
+      <li>Image support for the front cover</li>
+    </ul>
+    <h4>0.5.0</h4>
+    <ul class="roadmap">
+      <li>HTML to eBook conversion</li>
+    </ul>
+  </p>
+</br>
+  <p>Currently, our gem requires the following dependencies:</p>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
+    <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
+    <li><i class="fa-li fa fa-check colour"></i> Redcarpet</li>
+    <li><i class="fa-li fa fa-check colour"></i> Friendly_id</li>
+    <li><i class="fa-li fa fa-check colour"></i> Rubyzip</li>
+  </ul>
+  <br/>
+  <h4>Future Support</h4><p>If you would like to see a certain feature integrated into this gem, then you can either <a href="https://github.com/krisquigley/ebook_generator">fork us</a>, or send on your ideas through our <a href="#contact">contact page form</a>.</p>
 </div>
 
 
-        <!-- /about -->
+            <!--End mc_embed_signup-->
 
-        <!-- ebook generator -->
 
-<div class="pad30"></div>
-<div class="container wrapper">
-  <div class="inner_content">
-    <!-- sidebar -->
-    <div class="row">
-      <div class="span3">
-        <h4><span>Details</span></h4>
-        <p>Our eBook Generator runs on the following technologies:</p>
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
-          <li><i class="fa-li fa fa-check colour"></i> Bootstrap 3</li>
-          <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
-          <li><i class="fa-li fa fa-check colour"></i> Heroku</li>
-        </ul>
-      <p>This website is actually powered by our <a href="#ebook-gem">eBook Generator Gem</a>, which is freely available to integrate into your own projects.  Details on how this can be used and our future roadmap can be found <a href="#ebook-gem-roadmap">below.</a></p>
+<div class="well well-lg">
+  <a href="http://pali-canon.affinity-tech.com"><img class="project-image" src="img/pali-canon.jpg" alt="Pali Canon Image" ></a>
+  <h2><a href="http://pali-canon.affinity-tech.com">Pali Canon</a></h2>
+  <p><b>We are currently in the process of importing the HTML of over 1000 suttas from <a href="http://www.accesstoinsight.com/">Access to Insight</a> in order to generate eBooks for free distribution.</b></p>
+  <p>Currently a landing page, the Pali Canon site will eventually hold over 1000 suttas from the Pali Canon which are available in HTML on <a href="http://www.accesstoinsight.com/">Access to Insight</a>.  We are in the process of moving the content into our database after which will be used to generate eBooks of the Pali Canon to make it much more convenient for people to read them away from a computer.</p>
+  <p>The Pali Canon will be built on the following technologies:</p>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
+    <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
+    <li><i class="fa-li fa fa-check colour"></i> Bootstrap 3</li>
+    <li><i class="fa-li fa fa-check colour"></i> Hosted on Heroku</li>
+  </ul>
+</div>
 
-        <div class="pad30"></div>
-        <div class="col_full">
+<div class="well well-lg" name="contact">
+<h2 class="pad">Not an NPO, but looking for a commercial website?</h2>
+  <p>Contact us with your requirements and we can provide you with a quote.</p>
 
-          <div class="pad15"></div>
-        </div>
-      </div>
-
-      <div class="span9 pad15">
-          <!-- sidebar -->
-
-  			<div class="myslider">
-         <a href="http://ebook-generator.affinity-tech.com"><img src="img/ebook.jpeg" alt="eBook Generator Image" ></a>
-  	    </div>
-
-            <!-- /SLIDER set height and width of your images in the script at the bottom of page -->
-
-        <h2><a href="http://ebook-generator.affinity-tech.com"><span>eBook Generator</span></a></h2>
-
-        <p><b>What began as an in-house app to help us create eBooks has become a public facing tool to give back to the community what we have found a great timesaver.  Currently, this is only capable of exporting to .ePub format which can be used in pass like iBooks.</b></p>
-
-        <p>Current features include the ability to reorder sections of the book by drag and dropping them, editing and deleting sections and through using Markdown to write content.  Markdown is a very quick and easy way to style and control HTML.  We have plans to introduce many more features such as .mobi export which can be used with Amazon's Kindle line of readers and support for adding front cover images and more control over the style of your content.  Further down the road, we would even like to build integrated services to help have your book published or even printed.  If you would like to see a certain feature integrated into the site, then we would love to hear from you.  Ideas can be sent to us from our contact page form.</p>
-
+<form class="form-horizontal" id="ajax-contact-form" action="http://getsimpleform.com/messages?form_api_token=c1c2494c39fe2e6b6f29f634c27ccd95" method="post">
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <fieldset>
+    <input type='hidden' name='redirect_to' value='http://www.affinity-tech.com/thankyou.html' />
+    <!-- all your input fields here.... -->
+    <div class="form-group">
+      <label for="inputName" class="col-xs-2 control-label">Name <span class="required">*</span></label>
+      <div class="col-xs-10">
+        <input class="form-control" type="text" name="Name" value="" placeholder="Name" />
       </div>
     </div>
-  </div>
-</div>
-
-          <!-- /ebook generator -->
-<!--strip-->
-<div class="strip">
-  <h1 class="center">Get A Free Quote</h1>
-  <h3 class="center about_strip">If you are looking for a commercial site or webapp, we would be more than happy to provide you with a free quote.</h3>
-  <div class="pad45"></div>
-
-  <a href="#contact" class="big_button">Contact Us Today</a>
-  <div class="pad25"></div>
-</div>
-<!--/strip-->
-          <!-- ebook gem -->
-          	<!--banner-->
-
-
-<div class="pad30" name="ebook-gem"></div>
-<div class="container wrapper">
-  <div class="inner_content">
-
-    <div class="row">
-      <div class="span9 pad15">
-
-        <div class="myslider">
-          <a href="https://github.com/krisquigley/ebook_generator"><img src="img/ebook-gem.jpeg" alt="eBook Generator Gem Image" ></a>
-        </div>
-
-		    <h2><span>eBook Gem</span></h2>
-
-  			<p><b>Our eBook Gem is currently powering our eBook Generator site, details of which can be found above.</b></p>
-
-        <h3>Installation</h3>
-
-        <p><strong>Add this line to your application's Gemfile:</strong></p>
-
-        <p>gem 'ebook_generator'</p>
-
-        <p><strong>And then execute:</strong></p>
-
-        <p>$ bundle</p>
-
-        <p><strong>Or install it yourself as:</strong></p>
-
-        <p>$ gem install ebook_generator</p>
-
-        <h3>Usage</h3>
-
-  			<p><strong>Generate the tables needed to process the ebooks:</strong> rails generate ebook_generator</p>
-
-        <p><strong>Migrate the database:</strong> rake db:migrate</p>
-
-        <p><strong>Pass the id for the ebook you want to generate:</strong> EbookGenerator.generate_ebook(ebook.id)</p>
-
-        <p>This will then generate an ePub based on the values in the db and output to the /tmp folder.</p>
-
-        <h3 name="ebook-gem-roadmap">Feature Roadmap</h3>
-
-  			<p>
-          <h4>0.1.0</h4>
-
-        <ul>
-        <li>Kindle support</li>
-        <li>Tests</li>
-      </ul><h4>0.2.0</h4>
-
-        <ul>
-        <li>Style editing</li>
-      </ul><h4>0.3.0</h4>
-
-        <ul>
-        <li>PDF out</li>
-      </ul><h4>0.4.0</h4>
-
-        <ul>
-        <li>HTML out</li>
-        <li>Image support for the front cover</li>
-      </ul><h4>0.5.0</h4>
-
-        <ul>
-        <li>HTML to eBook conversion</li>
-      </ul>
-        </p>
-      </div>
-
-			<!-- sidebar -->
-
-			<div class="span3 marg-topminus1">
-        <h4><a href="https://github.com/krisquigley/ebook_generator"><span>eBook Gem</span></a></h4>
-        <p>Currently, our gem requires the following dependencies:</p>
-
-        <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
-          <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
-          <li><i class="fa-li fa fa-check colour"></i> Redcarpet</li>
-          <li><i class="fa-li fa fa-check colour"></i> Friendly_id</li>
-          <li><i class="fa-li fa fa-check colour"></i> Rubyzip</li>
-        </ul>
-
-  			<h5>Future Support</h5><p>If you would like to see a certain feature integrated into this gem, then you can either <a href="https://github.com/krisquigley/ebook_generator">fork us</a>, or send on your ideas through our <a href="#contact">contact page form</a>.</p>
-  			<div class="pad30"></div>
-
+    <div class="form-group">
+      <label for="inputEmail" class="col-xs-2 control-label">Email <span class="required">*</span></label>
+      <div class="col-xs-10">
+        <input class="form-control" type="text" name="Email" value="" placeholder="Email" />
       </div>
     </div>
-  </div>
-</div>
-        <!-- /ebook gem -->
-<!-- get in touch -->
-<div id="footer">
-  <h1>get in touch</h1>
-  <h3 class="center follow">
-    If you would like to follow updates about our new and existing projects or to discuss a project of your own. Then please feel free to sign up to our newsletter or contact us.
-  </h3>
-
-  <div class="follow_us">
-    <!-- Begin MailChimp Signup Form -->
-      <div class="form-group">
-        <form action="http://krisquigley.us7.list-manage2.com/subscribe/post?u=0ae688765cfcd447616e2ae23&amp;id=2097ed7c81" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <label for="mce-EMAIL" class="control-label"></label>
-          <div class="input-group">
-            <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Sign up for our newsletter">
-
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_0ae688765cfcd447616e2ae23_2097ed7c81" value=""></div>
-            <span class="input-group-btn">
-              <input type="submit" class="btn btn-primary" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
-            </span>
-          </form>
-        </div>
-      <!--End mc_embed_signup-->
-    </div>
-  </div>
-</div>
-<!-- /get in touch -->
-        <!-- pali canon -->
-
-<div class="pad30"></div>
-<div class="container wrapper">
-  <div class="inner_content">
-    <!-- sidebar -->
-      <div class="row">
-        <div class="span3">
-         <h4><span>Pali Canon</span></h4>
-         <p>The Pali Canon will be built on the following technologies:</p>
-         <ul class="fa-ul">
-           <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
-           <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
-           <li><i class="fa-li fa fa-check colour"></i> Bootstrap 3</li>
-           <li><i class="fa-li fa fa-check colour"></i> Hosted on Heroku</li>
-         </ul>
-
-
-        <div class="pad30"></div>
-
-      </div>
-
-      <div class="span9 pad15">
-        <!-- sidebar -->
-        <div class="myslider">
-         <a href="http://pali-canon.affinity-tech.com"><img src="img/pali-canon.jpg" alt="Pali Canon Image" ></a>
-        </div>
-          <!-- /SLIDER set height and width of your images in the script at the bottom of page -->
-
-        <h2><a href="http://pali-canon.affinity-tech.com"><span>Pali Canon</span></a></h2>
-
-        <p><b>We are currently in the process of importing the HTML of over 1000 suttas from <a href="http://www.accesstoinsight.com/">Access to Insight</a> in order to generate eBooks for free distribution.</b></p>
-
-        <p>Currently a landing page, the Pali Canon site will eventually hold over 1000 suttas from the Pali Canon which are available in HTML on <a href="http://www.accesstoinsight.com/">Access to Insight</a>.  We are in the process of moving the content into our database after which will be used to generate eBooks of the Pali Canon to make it much more convenient for people to read them away from a computer.</p>
-
+    <div class="form-group">
+      <label for="inputSubject" class="col-xs-2 control-label">Subject</label>
+      <div class="col-xs-10">
+        <input class="form-control" type="text" name="Subject" value="" placeholder="Subject" /><br>
       </div>
     </div>
-  </div>
-</div>
-
-          <!-- /pali canon -->
-
-<div id="banner" name="contact">
-  <div class="container intro_wrapper">
-    <div class="inner_content">
-      <h1>Get in Touch</h1>
-      <h1 class="title">Our Details</h1>
-
-      <h1 class="intro">
-        Do you need a website, have a question or comment?<br/> Please feel free fill in our handy contact form. We aim to reply within 24 hours.
-      </h1>
-    </div>
-  </div>
-</div>
-
-<div class="container wrapper">
-  <div class="inner_content">
-    <div class="pad10"></div>
-    <div class="row">
-      <div class="span4">
-        <h3>Not an NPO but looking for a commercial website?</h3>
-        Contact us with your requirements and we can provide you with a quote.
-      </div>
-      <div class="pad10"></div>
-      <div class="span8 ">
-        <div class="contact_form">
-          <div id="note"></div>
-          <div id="fields">
-            <form id="ajax-contact-form" action="http://getsimpleform.com/messages?form_api_token=c1c2494c39fe2e6b6f29f634c27ccd95" method="post">
-              <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-              <input type='hidden' name='redirect_to' value='http://www.affinity-tech.com/thankyou.html' />
-                <!-- all your input fields here.... -->
-              <p class="form_info">name <span class="required">*</span></p>
-              <input class="span5" type="text" name="name" value="" />
-              <p class="form_info">email <span class="required">*</span></p>
-              <input class="span5" type="text" name="email" value=""  />
-              <p class="form_info">subject</p>
-              <input class="span5" type="text" name="subject" value="" /><br>
-              <p class="form_info">message</p>
-              <textarea name="message" id="message" class="span8" ></textarea>
-              <div class="clear"></div>
-
-              <input type="submit" class="btn  btn-primary btn-form marg-right5" value="submit" />
-              <input type="reset"  class="btn  btn-primary btn-form" value="reset" />
-              <div class="clear pad45 hidden-desktop"></div>
-            </form>
-          </div>
-        </div>
+    <div class="form-group">
+      <label for="inputMessage" class="col-xs-2 control-label">Message</label>
+      <div class="col-xs-10">
+        <textarea name="message" id="Message" class="form-control" rows="3" placeholder="Message" ></textarea>
       </div>
     </div>
-  </div>
-</div>
-<div class="pad25 hidden-desktop"></div>
+    <div class="form-group">
+      <div class="col-xs-10 col-xs-offset-2">
+        <input type="submit" class="btn btn-primary" value="submit" />
+        <input type="reset"  class="btn btn-default" value="reset" />
+      </div>
+    </div>
+
+    </fieldset>
+  </form>
 </div>

@@ -1,74 +1,12 @@
 ---
-layout: default
+layout: blog
 ---
-<div id="banner">
-  <div class="container intro_wrapper">
-    <div class="inner_content">
-      <h1>Online Journal</h1>
-      <h1 class="title">Creative Bits And Bobs</h1>
-      <h1 class="intro">Web design is the creation of <span class="hue">digital environments</span>, that <span>facilitate</span> and encourage human activity;
-        <span>reflect </span> or adapt to individual voices and content.
-      </h1>
-    </div>
+{% for post in site.posts %}
+  <div class="well well-lg">
+    <h1 class="pad"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
+    <p>Posted by {{ post.author }} in {{ post.categories }} tags {{ post.tags }} </p>
+    {{ post.excerpt |  remove: '</p>' }}<a href="{{ post.url }}">[&#8230;]</a></p>
+    <p><a href="{{ post.url }}">READ MORE &rarr;</a></p>
   </div>
-</div>
-
-<div class="container wrapper" name="about">
-  <div class="inner_content">
-    <div class="pad30"></div>
-    <div class="row">
-      <!--post-->
-      {% for post in site.posts %}
-      <div class="span9 pad15">
-        <div class="row">
-          <!--date-->
-          <div class="span1">
-            <div class="btn btn-medium btn-rounded btn-blog1"> {{ post.date | date: "%b %-d, %Y" }} </div>
-          </div>
-          <!--post entry-->
-          <div class="span8">
-            <h1 class="post_link"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h1>
-
-            <div class="post-meta muted">
-              <ul>
-                <li>Posted by {{ post.author }} </li>
-                <li>in {{ post.categories }} </li>
-                <li>tags {{ post.tags }} </li>
-              </ul>
-            </div>
-            {{ post.excerpt |  remove: '</p>' }}<a class="post-link" href="{{ post.url }}">[&#8230;]</a></p>
-            <div class="read_more"><a class="post-link" href="{{ post.url }}">READ MORE &rarr;</a></div>
-            <div class="pad30"></div>
-
-          <!--end post-->
-          {% endfor %}
-          <div class="pad25 hidden-desktop"></div>
-          <div class="pad25"></div>
-          <ul class="pager">
-            <li class="previous"><a href="#">&larr; Older</a></li>
-            <li class="next"><a href="#">Newer &rarr;</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-        <!--end pager-->
-
-
-    <!--sidebar-->
-    <div class="sidebar span3">
-
-      <h3>Categories</h3>
-      <ul class="fa-ul">
-        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">affinity tech</a></li>
-        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">eBook Generator</a></li>
-        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">eBook Gem</a></li>
-        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="">Pali Canon</a></li>
-      </ul>
-  		<div class="pad10"></div>
-
-      </div>
-  </div>
-</div>
-</div>
-</div>
-<!--end-->
+{% endfor %}
