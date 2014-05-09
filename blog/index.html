@@ -1,0 +1,25 @@
+---
+layout: blog
+---
+<div class="col-xs-6 pad">
+  <!--page-->
+  {% for post in site.posts %}
+    <div class="well well-lg blog">
+      <h3>{{ post.date | date: "%b %-d, %Y" }}</h3>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <h4>Posted by {{ post.author }} in {% for category in post.categories %} <a href="/categories/{{ category | replace:' ', '-' }}/">{{ category }}</a>{% if forloop.last == false %}, {% endif %}  {% endfor %}</h4>
+      {{ post.excerpt |  remove: '</p>' }}<a href="{{ post.url }}">[&#8230;]</a></p>
+      <p><a href="{{ post.url }}">READ MORE &rarr;</a></p>
+    </div>
+  {% endfor %}
+</div>
+<div class="col-xs-3">
+  <div class="well well-lg">
+    <h3 class="pad">Categories</h3>
+    <ul class="fa-ul">
+      {% for category in site.categories %}
+        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="/categories/{{category[0]}}/">{{category[0]}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

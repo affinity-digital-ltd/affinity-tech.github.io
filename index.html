@@ -1,0 +1,158 @@
+---
+layout: default
+description: affinity tech provides its services for free to individuals and NPOs whose purpose is to provide for others.
+keywords: ebook, affinity, tech, affinity tech, websites, webdesign, rails, ruby, community, free
+title: We feel that giving to the community is important.  Which is why we offer our services for free to not-for-profit organisations.
+sitemap:
+    priority: 0.7
+    changefreq: monthly
+    lastmod: 2014-05-09T15:13:12+08:00
+---
+<div class="well well-lg">
+    <a href="http://ebook-generator.affinity-tech.com"><img class="project-image" src="img/ebook.jpeg" alt="eBook Generator Image" ></a>
+  <h1><a href="http://ebook-generator.affinity-tech.com">eBook Generator</a></h1>
+  <p><b>What began as an in-house app to help us create eBooks has become a public facing tool to give back to the community what we have found a great timesaver.  Currently, this is only capable of exporting to .ePub format which can be used in pass like iBooks.</b></p>
+  <p>Current features include the ability to reorder sections of the book by drag and dropping them, editing and deleting sections and through using Markdown to write content.  Markdown is a very quick and easy way to style and control HTML.  We have plans to introduce many more features such as .mobi export which can be used with Amazon's Kindle line of readers and support for adding front cover images and more control over the style of your content.  Further down the road, we would even like to build integrated services to help have your book published or even printed.  If you would like to see a certain feature integrated into the site, then we would love to hear from you.  Ideas can be sent to us from our contact page form.</p>
+
+  <p>Our eBook Generator runs on the following technologies:</p>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
+    <li><i class="fa-li fa fa-check colour"></i> Bootstrap 3</li>
+    <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
+    <li><i class="fa-li fa fa-check colour"></i> Heroku</li>
+  </ul>
+  <p>This website is actually powered by our <a href="#ebook-gem">eBook Generator Gem</a>, which is freely available to integrate into your own projects.  Details on how this can be used and our future roadmap can be found <a href="#ebook-gem-roadmap">below.</a></p>
+
+</div>
+
+<div class="well well-lg text-center">
+  <h2 class="pad">Get in Touch</h2>
+  <p>If you are looking for a commercial site or webapp, we would be more than happy to provide you with a free quote.</p>
+  <p>
+    <a href="#contact" class="btn btn-primary">Contact Us Today</a>
+  </p>
+</div>
+
+<div class="well well-lg">
+  <a href="https://github.com/krisquigley/ebook_generator"><img class="project-image" src="img/ebook-gem.jpeg" alt="eBook Generator Gem Image" ></a>
+  <h1><a href="https://github.com/krisquigley/ebook_generator">eBook Gem</a></h1>
+  <p><b>Our eBook Gem is currently powering our eBook Generator site, details of which can be found above.</b></p>
+  <h3>Installation</h3>
+  <p><strong>Add this line to your application's Gemfile:</strong></p>
+  {% highlight bash %}gem 'ebook_generator' {% endhighlight %}
+  <p><strong>And then execute:</strong></p>
+  {% highlight bash %}$ bundle {% endhighlight %}
+  <p><strong>Or install it yourself as:</strong></p>
+  {% highlight bash %}$ gem install ebook_generator {% endhighlight %}
+  <h3>Usage</h3>
+  {% highlight ruby %}
+# Generate the tables needed to process the ebooks
+rails generate ebook_generator
+
+# Migrate the database
+rake db:migrate
+
+# Pass the id for the ebook you want to generate
+EbookGenerator.generate_ebook(ebook.id)
+
+# This will then generate an ePub based on the values in the db
+# and output to the /tmp folder.{% endhighlight %}
+  <h3 name="ebook-gem-roadmap">Feature Roadmap</h3>
+  <p>
+    <h4>0.1.0</h4>
+    <ul class="roadmap">
+      <li>Kindle support</li>
+      <li>Tests</li>
+    </ul>
+    <h4>0.2.0</h4>
+    <ul class="roadmap">
+      <li>Style editing</li>
+    </ul>
+    <h4>0.3.0</h4>
+    <ul class="roadmap">
+      <li>PDF out</li>
+    </ul>
+    <h4>0.4.0</h4>
+    <ul class="roadmap">
+      <li>HTML out</li>
+      <li>Image support for the front cover</li>
+    </ul>
+    <h4>0.5.0</h4>
+    <ul class="roadmap">
+      <li>HTML to eBook conversion</li>
+    </ul>
+  </p>
+</br>
+  <p>Currently, our gem requires the following dependencies:</p>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
+    <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
+    <li><i class="fa-li fa fa-check colour"></i> Redcarpet</li>
+    <li><i class="fa-li fa fa-check colour"></i> Friendly_id</li>
+    <li><i class="fa-li fa fa-check colour"></i> Rubyzip</li>
+  </ul>
+  <br/>
+  <h4>Future Support</h4><p>If you would like to see a certain feature integrated into this gem, then you can either <a href="https://github.com/krisquigley/ebook_generator">fork us</a>, or send on your ideas through our <a href="#contact">contact page form</a>.</p>
+</div>
+
+
+            <!--End mc_embed_signup-->
+
+
+<div class="well well-lg">
+  <a href="http://pali-canon.affinity-tech.com"><img class="project-image" src="img/pali-canon.jpg" alt="Pali Canon Image" ></a>
+  <h2><a href="http://pali-canon.affinity-tech.com">Pali Canon</a></h2>
+  <p><b>We are currently in the process of importing the HTML of over 1000 suttas from <a href="http://www.accesstoinsight.com/">Access to Insight</a> in order to generate eBooks for free distribution.</b></p>
+  <p>Currently a landing page, the Pali Canon site will eventually hold over 1000 suttas from the Pali Canon which are available in HTML on <a href="http://www.accesstoinsight.com/">Access to Insight</a>.  We are in the process of moving the content into our database after which will be used to generate eBooks of the Pali Canon to make it much more convenient for people to read them away from a computer.</p>
+  <p>The Pali Canon will be built on the following technologies:</p>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
+    <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
+    <li><i class="fa-li fa fa-check colour"></i> Bootstrap 3</li>
+    <li><i class="fa-li fa fa-check colour"></i> Hosted on Heroku</li>
+  </ul>
+</div>
+
+<div class="well well-lg" name="contact">
+<h2 class="pad">Not an NPO, but looking for a commercial website?</h2>
+  <p>Contact us with your requirements and we can provide you with a quote.</p>
+
+<form class="form-horizontal" id="ajax-contact-form" action="http://getsimpleform.com/messages?form_api_token=c1c2494c39fe2e6b6f29f634c27ccd95" method="post">
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <fieldset>
+    <input type='hidden' name='redirect_to' value='http://www.affinity-tech.com/thankyou.html' />
+    <!-- all your input fields here.... -->
+    <div class="form-group">
+      <label for="inputName" class="col-xs-2 control-label">Name <span class="required">*</span></label>
+      <div class="col-xs-10">
+        <input class="form-control" type="text" name="Name" value="" placeholder="Name" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="col-xs-2 control-label">Email <span class="required">*</span></label>
+      <div class="col-xs-10">
+        <input class="form-control" type="text" name="Email" value="" placeholder="Email" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputSubject" class="col-xs-2 control-label">Subject</label>
+      <div class="col-xs-10">
+        <input class="form-control" type="text" name="Subject" value="" placeholder="Subject" /><br>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputMessage" class="col-xs-2 control-label">Message</label>
+      <div class="col-xs-10">
+        <textarea name="message" id="Message" class="form-control" rows="3" placeholder="Message" ></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-10 col-xs-offset-2">
+        <input type="submit" class="btn btn-primary" value="submit" />
+        <input type="reset"  class="btn btn-default" value="reset" />
+      </div>
+    </div>
+
+    </fieldset>
+  </form>
+</div>
