@@ -8,5 +8,6 @@ exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor]
 
 # Build settings
 markdown: kramdown
-permalink: /blog/:categories/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
+include: ['blog']
 highlighter: rouge
