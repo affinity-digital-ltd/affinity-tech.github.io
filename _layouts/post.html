@@ -34,8 +34,8 @@ layout: blog
 	</div>
 		{% if site.related_posts != empty %}
 		<div class="well well-lg">
-			{% for post in site.related_posts %}
 			<h3 class="pad">Related Posts</h3>
+			{% for post in site.related_posts %}
 			<h5>
 				{{ post.date | date: "%b %-d, %Y" }}<br/>
 				<a href="{{ post.url }}">{{ post.title }}</a>
