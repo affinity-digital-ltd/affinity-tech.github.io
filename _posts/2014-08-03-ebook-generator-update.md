@@ -2,7 +2,7 @@
 layout: post
 title:  "eBook Generator Update"
 date:   2014-08-03 23:11:00
-categories: [affinity-tech,ebook-gem]
+categories: [affinity-tech,ebook-gem,soup-kitchen]
 author: Kris Quigley
 comments: true
 ---
