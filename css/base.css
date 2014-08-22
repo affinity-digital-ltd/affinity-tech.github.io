@@ -155,3 +155,17 @@ a:hover {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+.twit {
+  color: black;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+.social span {
+  margin-top: 20px;
+}
+
+.fa-twitter:hover .fa-circle {
+  color: lightgrey;
+}
