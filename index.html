@@ -69,32 +69,30 @@ rails generate ebook_generator
 # Migrate the database
 rake db:migrate
 
-# Pass the id for the ebook you want to generate
-EbookGenerator.generate_ebook(ebook.id)
+# Pass the object of the ebook you want to generate
+EbookGenerator.generate_ebook(ebook_object)
+
+# Pass true as the second argument if you want to generate a Kindle .mobi file
+EbookGenerator.generate_ebook(ebook_object, true)
 
 # This will then generate an ePub based on the values in the db
 # and output to the /tmp folder.{% endhighlight %}
   <h3 name="ebook-gem-roadmap">Feature Roadmap</h3>
   <p>
-    <h4>0.1.0</h4>
-    <ul class="roadmap">
-      <li>Kindle support</li>
-      <li>Tests</li>
-    </ul>
-    <h4>0.2.0</h4>
+    <h4>1.1.0</h4>
     <ul class="roadmap">
       <li>Style editing</li>
     </ul>
-    <h4>0.3.0</h4>
+    <h4>1.2.0</h4>
     <ul class="roadmap">
       <li>PDF out</li>
     </ul>
-    <h4>0.4.0</h4>
+    <h4>1.3.0</h4>
     <ul class="roadmap">
       <li>HTML out</li>
       <li>Image support for the front cover</li>
     </ul>
-    <h4>0.5.0</h4>
+    <h4>1.4.0</h4>
     <ul class="roadmap">
       <li>HTML to eBook conversion</li>
     </ul>
@@ -103,10 +101,9 @@ EbookGenerator.generate_ebook(ebook.id)
   <p>Currently, our gem requires the following dependencies:</p>
   <ul class="fa-ul">
     <li><i class="fa-li fa fa-check colour"></i> Ruby on Rails</li>
-    <li><i class="fa-li fa fa-check colour"></i> Postgres</li>
     <li><i class="fa-li fa fa-check colour"></i> Redcarpet</li>
-    <li><i class="fa-li fa fa-check colour"></i> Friendly_id</li>
     <li><i class="fa-li fa fa-check colour"></i> Rubyzip</li>
+    <li><i class="fa-li fa fa-check colour"></i> Kindlegen (to generate .mobi files)</li>
   </ul>
   <br/>
   <h4>Future Support</h4><p>If you would like to see a certain feature integrated into this gem, then you can either <a href="https://github.com/krisquigley/ebook_generator">fork us</a>, or send on your ideas through our <a href="#contact">contact page form</a>.</p>
