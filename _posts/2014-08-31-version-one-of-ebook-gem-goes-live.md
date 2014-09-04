@@ -22,9 +22,9 @@ It also returns the path of the file generated for your convenience.
 There is now support to generate Kindle .mobi eBooks, but this requires the
 [Kindlegen](http://www.amazon.com/gp/feature.html?docId=1000765211) command line tool
 to be placed in the Rails app `/bin` folder first.  To generate a Kindle .mobi file instead of an .ePub
-requires the passing of `true` as a second argument:
+requires the passing of `kindle` as a second argument:
 
-`EbookGenerator.generate_ebook(ebook_object, true)`
+`EbookGenerator.generate_ebook(ebook_object, 'kindle')`
 
 The Gem has also been completely reorganised so that it is now a Rails plugin with built in
  generators to generate the Ebook and Section models and relevant migrations:
