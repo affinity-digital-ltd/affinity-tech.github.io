@@ -72,8 +72,8 @@ rake db:migrate
 # Pass the object of the ebook you want to generate
 EbookGenerator.generate_ebook(ebook_object)
 
-# Pass true as the second argument if you want to generate a Kindle .mobi file
-EbookGenerator.generate_ebook(ebook_object, true)
+# Pass the string 'kindle' as the second argument if you want to generate a Kindle .mobi file
+EbookGenerator.generate_ebook(ebook_object, 'kindle')
 
 # This will then generate an ePub based on the values in the db
 # and output to the /tmp folder.{% endhighlight %}
