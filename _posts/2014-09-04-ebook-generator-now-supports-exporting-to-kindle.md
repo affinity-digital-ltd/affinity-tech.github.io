@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "eBook Generator Now Support Exporting to Kindle"
+title:  "eBook Generator Now Supports Exporting to Kindle"
 date:   2014-09-04 20:44:00
 categories: [affinity-tech, ebook-generator, ebook-gem]
 author: Kris Quigley
