@@ -8,8 +8,8 @@ comments: true
 ---
 
 Following the release of v1 of the eBook Gem, which has just had a minor revision
- [https://github.com/krisquigley/ebook_generator](update to 1.0.3), we have now
- updated the our [http://ebook-generator.affinity-tech.com/](eBook Generator frontend)
+ [update to 1.0.3](https://github.com/krisquigley/ebook_generator), we have now
+ updated the our [eBook Generator frontend](http://ebook-generator.affinity-tech.com/)
   to support this new functionality.
 
 If you have any ideas for us on what features you would like to see, please
