@@ -12,17 +12,13 @@
     </script>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-3 sidebar">
+        <div class="col-xs-12 col-md-3 sidebar">
           {% include header.html %}
           <footer>
             affinity tech &copy; 2014
           </footer>
         </div>
-        <div class="col-xs-6 pad">
-          <!--page-->
-          {{ content }}
-        </div>
-        <div class="col-xs-3 pad">
+        <div class="col-xs-12 col-md-3 col-md-push-6 pad">
           <div class="well well-lg">
              <i class="fa fa-heart colour big pad"></i>
               <h2>Our Philosophy</h2>
@@ -81,6 +77,10 @@
           </fieldset>
             </form>
           </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-md-pull-3 pad">
+            <!--page-->
+            {{ content }}
           </div>
           </div>
         </div>

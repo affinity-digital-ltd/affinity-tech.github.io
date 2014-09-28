@@ -2,7 +2,18 @@
 layout: blog
 title: "The latest news from affinity tech."
 ---
-<div class="col-xs-6 pad">
+<div class="col-xs-12 col-md-3 col-md-push-6">
+  <div class="well well-lg">
+    <h3 class="pad">Categories</h3>
+    <ul class="fa-ul">
+      {% for category in site.categories %}
+        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="/categories/{{category[0]}}/">{{category[0]}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="col-xs-12 col-md-6 col-md-pull-3 pad">
   <!--page-->
   {% for post in site.posts %}
     <div class="well well-lg blog">
@@ -13,14 +24,4 @@ title: "The latest news from affinity tech."
       <p><a href="{{ post.url }}">READ MORE &rarr;</a></p>
     </div>
   {% endfor %}
-</div>
-<div class="col-xs-3">
-  <div class="well well-lg">
-    <h3 class="pad">Categories</h3>
-    <ul class="fa-ul">
-      {% for category in site.categories %}
-        <li><i class="fa-li fa fa-caret-right grey2"></i><a href="/categories/{{category[0]}}/">{{category[0]}}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
 </div>
