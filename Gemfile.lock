@@ -46,7 +46,6 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.4)
-    newrelic_rpm (3.9.4.245)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.9)
@@ -72,5 +71,4 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   jekyll
-  newrelic_rpm
   rouge
