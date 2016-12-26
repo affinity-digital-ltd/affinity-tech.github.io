@@ -1,0 +1,18 @@
+version: '2.1'
+
+services:
+  at_web:
+    build: .
+    image: at_app
+    command: bash -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"
+    volumes:
+      - .:/app
+    volumes_from:
+      - at_box
+    ports:
+      - '4000:4000'
+
+  at_box:
+    image: busybox
+    volumes:
+      - /box
