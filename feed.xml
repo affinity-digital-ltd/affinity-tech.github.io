@@ -1,24 +1,194 @@
----
-layout: none
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
 
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <title>affinity tech</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml" />
 
-    {% for post in site.posts limit:10 %}
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <title>Forest Sangha - Updated</title>
+        <description>&lt;p&gt;Today we are announcing a very important update for the &lt;a href=&quot;https://forestsangha.org&quot;&gt;Forest Sangha&lt;/a&gt; website.&lt;/p&gt;
 
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+&lt;p&gt;Users are now able to order, free of charge, a selection of publications provided by the forest sangha group of monasteries.&lt;/p&gt;
+
+&lt;p&gt;We will be reimplementing the original functionaliy of ordering books and audio discs at a later date.&lt;/p&gt;
+
+&lt;p&gt;For more information see our &lt;a href=&quot;http://www.affinity-tech.com&quot;&gt;projects page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jul 2016 21:24:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2016/07/20/forest-sangha-updated/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/07/20/forest-sangha-updated/</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Forest Sangha - Completed</title>
+        <description>&lt;p&gt;We are pround to announce the completion of our latest project, &lt;a href=&quot;https://forestsangha.org&quot;&gt;Forest Sangha&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;During the past four months we have been working with the monastic community to redesdign and rebuild their site.&lt;/p&gt;
+
+&lt;p&gt;We will be reimplementing the original functionaliy of ordering books and audio discs at a later date.&lt;/p&gt;
+
+&lt;p&gt;For more information see our &lt;a href=&quot;http://www.affinity-tech.com&quot;&gt;projects page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Oct 2015 21:24:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2015/10/25/forest-sangha-completed/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2015/10/25/forest-sangha-completed/</guid>
+      </item>
+    
+      <item>
+        <title>Aruna Ratanagiri - Completed</title>
+        <description>&lt;p&gt;We are pround to announce the completion of our latest project, &lt;a href=&quot;https://ratanagiri.org.uk&quot;&gt;Aruna Ratanagiri&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;During the past three months we have been working with the monastery to redesdign and rebuild their site.&lt;/p&gt;
+
+&lt;p&gt;The completed site has been built on RefineryCMS and incorporates various services and APIs to bring together a clean and simplified administration experience.&lt;/p&gt;
+
+&lt;p&gt;For more information see our &lt;a href=&quot;http://www.affinity-tech.com&quot;&gt;projects page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 17 Dec 2014 21:24:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2014/12/17/aruna-ratanagiri-completed/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2014/12/17/aruna-ratanagiri-completed/</guid>
+      </item>
+    
+      <item>
+        <title>Support for Mobiles and Tablets</title>
+        <description>&lt;p&gt;We have recently updated the design of our site to fully support mobile and tablet
+ devices.&lt;/p&gt;
+
+&lt;p&gt;This means that your surfing experience will be much more enjoyable when you are on
+ the move!  If you spot any problems with the new design, then please be sure to
+  &lt;a href=&quot;http://www.affinity-tech.com/index.html#contact&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On another note, we are currently in the beginnings of a new community project.&lt;br /&gt;
+We cannot disclose too much at this time, however, we hope to give you some sneak
+ previews of the design further down the line.  If you are a charity owner in the need
+  of our free services or would like a reasonably priced website for your business,
+   then drop us an email to &lt;a href=&quot;mailto:info@affinity-tech.com&quot;&gt;info@affinity-tech.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 28 Sep 2014 20:54:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2014/09/28/support-for-mobiles-and-tablets/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2014/09/28/support-for-mobiles-and-tablets/</guid>
+      </item>
+    
+      <item>
+        <title>eBook Generator Now Supports Exporting to Kindle</title>
+        <description>&lt;p&gt;Following the release of v1 of the eBook Gem, which has just had a minor revision
+ &lt;a href=&quot;https://github.com/krisquigley/ebook_generator&quot;&gt;update to 1.0.3&lt;/a&gt;, we have now
+ updated the our &lt;a href=&quot;http://ebook-generator.affinity-tech.com/&quot;&gt;eBook Generator frontend&lt;/a&gt;
+  to support this new functionality.&lt;/p&gt;
+
+&lt;p&gt;If you have any ideas for us on what features you would like to see, please
+leave your opinions in the comments below. We would love to hear them!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Sep 2014 20:44:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2014/09/04/ebook-generator-now-supports-exporting-to-kindle/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2014/09/04/ebook-generator-now-supports-exporting-to-kindle/</guid>
+      </item>
+    
+      <item>
+        <title>Version one of eBook Gem goes live!</title>
+        <description>&lt;p&gt;We are proud to announce a much needed update to our eBook Gem.  The version number has been
+bumped up to 1.0 to signify that the codebase is a lot more mature, and also brings in
+incompatibilities over previous versions due to the changes in codebase.&lt;/p&gt;
+
+&lt;p&gt;The codebase is now covered by a test suite which should mean that it is stable enough to use
+in a production environment.&lt;/p&gt;
+
+&lt;p&gt;Amongst the changes, the gem now takes an &lt;code class=&quot;highlighter-rouge&quot;&gt;Ebook Object&lt;/code&gt; rather than an id to generate the file.
+It also returns the path of the file generated for your convenience.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;EbookGenerator.generate_ebook(ebook_object)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There is now support to generate Kindle .mobi eBooks, but this requires the
+&lt;a href=&quot;http://www.amazon.com/gp/feature.html?docId=1000765211&quot;&gt;Kindlegen&lt;/a&gt; command line tool
+to be placed in the Rails app &lt;code class=&quot;highlighter-rouge&quot;&gt;/bin&lt;/code&gt; folder first.  To generate a Kindle .mobi file instead of an .ePub
+requires the passing of &lt;code class=&quot;highlighter-rouge&quot;&gt;kindle&lt;/code&gt; as a second argument:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;EbookGenerator.generate_ebook(ebook_object, 'kindle')&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The Gem has also been completely reorganised so that it is now a Rails plugin with built in
+ generators to generate the Ebook and Section models and relevant migrations:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ rails g ebook_generator&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Additionally, the models have been redesigned so as not to rely on Postgres or Friendly_id, this
+is to give you the freedom to choose your flavour of database and how to generate your own
+slugs.&lt;/p&gt;
+
+&lt;p&gt;We would love to hear your thoughts on the gem and can even &lt;a href=&quot;https://github.com/krisquigley/ebook_generator&quot;&gt;fork us on github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We will also be updating our eBook generator frontend to use the new features introduced in this version.
+ Expect an update in the following days.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 31 Aug 2014 12:08:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2014/08/31/version-one-of-ebook-gem-goes-live/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2014/08/31/version-one-of-ebook-gem-goes-live/</guid>
+      </item>
+    
+      <item>
+        <title>Twitter</title>
+        <description>&lt;p&gt;Affinity Tech now has their own twitter account.  You can follow us &lt;a href=&quot;https://twitter.com/affinity_tech&quot;&gt;@affinity_tech&lt;/a&gt; and keep up to date with the latest news.  If you know of any startup not-for-profit organisations looking for a free website, then please get in touch.  We just might be able to help them!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Aug 2014 17:54:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2014/08/22/twitter/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2014/08/22/twitter/</guid>
+      </item>
+    
+      <item>
+        <title>eBook Generator Update</title>
+        <description>&lt;p&gt;Our eBook Gem will be receiving an update soon!&lt;/p&gt;
+
+&lt;p&gt;After the release of the &lt;a href=&quot;http://www.yellowrivercharity.com/en&quot;&gt;Yellow River Soup Kitchen&lt;/a&gt; site, we have been hard at work to bring you a much needed update to our eBook Gem.
+In the upcoming release you can expect to find:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tests!&lt;/li&gt;
+  &lt;li&gt;Support for Kindle .mobi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On another note, &lt;a href=&quot;http://www.yellowrivercharity.com/en&quot;&gt;yellowrivercharity.com&lt;/a&gt; is currently unavailable whilst they are in the process of transferring their domain.  They would like to apologise for any inconvenience this may have caused.  Thank you for your understanding.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 Aug 2014 23:11:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2014/08/03/ebook-generator-update/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2014/08/03/ebook-generator-update/</guid>
+      </item>
+    
+      <item>
+        <title>Yellow River Soup Kitchen</title>
+        <description>&lt;p&gt;We are very pleased to announce that we are currently developing a new website for the &lt;a href=&quot;http://www.yellowrivercharity.com&quot;&gt;Yellow River Soup Kitchen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once completed, the new website will be donated to the charity, potentially saving them money each year.  Money which could be used to further support those in need.&lt;/p&gt;
+
+&lt;p&gt;The Yellow River Soup Kitchen is a not for profit NGO, registered in the UK. A secular organisation that is open to everybody, it is wholly run by volunteers for volunteers and as such has no overheads of any description. Their objective is to organise or source a variety of projects, with the aim of bringing together two specific groups of people; namely those with a desire to serve and those that are in need. Hence, providing an opportunity, a vehicle, support and empowerment, to enable volunteers to channel their energies for the benefit of others whilst at the same time achieving personal growth and development. Facilitating the opportunity to cultivate a small change inside, potentially manifesting in a larger change outside.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Jun 2014 23:11:00 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2014/06/15/yellow-river-soup-kitchen/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2014/06/15/yellow-river-soup-kitchen/</guid>
+      </item>
+    
+      <item>
+        <title>Over 1000 Downloads</title>
+        <description>&lt;p&gt;We have surpassed the 1000 download mark.&lt;/p&gt;
+
+&lt;p&gt;This week we passed 1000 downloads for our eBook Generator Gem.  It is very promising to see the interest in such a gem, especially in it’s early stage of development.  We have high hopes for this gem and have many &lt;a href=&quot;http://www.affinity-tech.com&quot;&gt;features&lt;/a&gt; planned in the pipe-line.  If you would like to use this gem, fork it, or just provide us with feedback then please see our &lt;a href=&quot;https://github.com/krisquigley/ebook_generator&quot;&gt;github page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Jun 2014 18:27:28 +0000</pubDate>
+
+        <link>http://0.0.0.0:4000/blog/2014/06/13/ebook-generator-downloads/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2014/06/13/ebook-generator-downloads/</guid>
+      </item>
+    
   </channel>
 </rss>

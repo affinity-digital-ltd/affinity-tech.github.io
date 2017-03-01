@@ -1,39 +1,93 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 	<!-- Site/Blog Indexes -->
 	<url>
-		<loc>{{ site.url }}</loc>
-		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+		<loc>http://0.0.0.0:4000</loc>
+		<lastmod>2016-12-26T23:08:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>{{ site.url }}/blog/</loc>
-		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+		<loc>http://0.0.0.0:4000/blog/</loc>
+		<lastmod>2016-12-26T23:08:15+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 
-	<!-- Posts -->{% for post in site.posts %}
+	<!-- Posts -->
 	<url>
-		<loc>{{ site.url }}{{ post.url }}</loc>
-		<lastmod>{% if post.updated == null %}{{ post.date | date: '%Y-%m-%d' }}{% else %}{{ post.updated | date: '%Y-%m-%d' }}{% endif %}</lastmod>
+		<loc>http://0.0.0.0:4000/blog/2016/07/20/forest-sangha-updated/</loc>
+		<lastmod>2016-07-20</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
-	</url>{% endfor %}
-
-	<!-- Pages -->{% for node in site.pages %}{% comment %}
-	{% endcomment %}{% capture path %}{{ node.path | split:'/' | first }}{% endcapture %}{% comment %}
-	{% endcomment %}{% capture url %}{{ node.url | remove_first:'/' | remove: 'index.html' | split:'/' | first }}{% endcapture %}{% comment %}
-	{% endcomment %}{% if path == '_pages' and node.noindex != true and url != '' and url != 'blog' %}
+	</url>
 	<url>
-		<loc>{{ site.url }}{{ node.url }}</loc>
-		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+		<loc>http://0.0.0.0:4000/blog/2015/10/25/forest-sangha-completed/</loc>
+		<lastmod>2015-10-25</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>{% endif %}{% endfor %}
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/12/17/aruna-ratanagiri-completed/</loc>
+		<lastmod>2014-12-17</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/09/28/support-for-mobiles-and-tablets/</loc>
+		<lastmod>2014-09-28</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/09/04/ebook-generator-now-supports-exporting-to-kindle/</loc>
+		<lastmod>2014-09-04</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/08/31/version-one-of-ebook-gem-goes-live/</loc>
+		<lastmod>2014-08-31</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/08/22/twitter/</loc>
+		<lastmod>2014-08-22</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/08/03/ebook-generator-update/</loc>
+		<lastmod>2014-08-03</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/06/15/yellow-river-soup-kitchen/</loc>
+		<lastmod>2014-06-15</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/06/13/ebook-generator-downloads/</loc>
+		<lastmod>2014-06-13</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/05/09/site-redesign/</loc>
+		<lastmod>2014-05-09</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>http://0.0.0.0:4000/blog/2014/05/06/affinity-tech-blog/</loc>
+		<lastmod>2014-05-06</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<!-- Pages -->
 </urlset>
